@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPM — Screen · Analyze · Invest</title>
+    <link rel="icon" type="image/png" href="/rs-demo/mpm-logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Anti-FOUC: apply saved theme before React mounts -->
+    <script>
+      (function() {
+        var t = localStorage.getItem('theme') || 'system';
+        var direct = ['dark','light'];
+        var resolved;
+        if (direct.indexOf(t) !== -1) {
+          resolved = t;
+        } else {
+          // 'system' or unknown → resolve via media query
+          resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', resolved);
+      })();
+    </script>
+    <script type="module" crossorigin src="/rs-demo/assets/index-CTEno21u.js"></script>
+    <link rel="modulepreload" crossorigin href="/rs-demo/assets/vendor-EX7jzCcx.js">
+    <link rel="modulepreload" crossorigin href="/rs-demo/assets/vendor-icons-CyDIm86g.js">
+    <link rel="stylesheet" crossorigin href="/rs-demo/assets/index-DHAAIeLY.css">
+  </head>
+  <body class="bg-bg text-text font-sans antialiased">
+    <div id="root"></div>
+  </body>
+</html>
