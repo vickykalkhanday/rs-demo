@@ -1,1 +1,1 @@
-{"as_of_latest":"2026-06-10","as_of_prev":null,"count_dropped":0,"by_sector":{},"by_industry":{},"entries":[]}
+{"as_of_latest":"2026-06-11","as_of_prev":"2026-06-10","count_dropped":2,"by_sector":{"Capital Markets":1,"Retail":1},"by_industry":{"Capital Markets":1,"Retailing":1},"entries":[{"ticker":"ANANDRATHI","rank":14,"final_score":94.32038098735862,"sector":"Capital Markets","industry":"Capital Markets","name":"Anand Rathi Wealth Limited"},{"ticker":"TRENT","rank":63,"final_score":80.94383999733468,"sector":"Retail","industry":"Retailing","name":"Trent Limited"}]}
