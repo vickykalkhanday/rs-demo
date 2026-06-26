@@ -1,0 +1,4 @@
+import{al as g}from"./vendor-B75IGAWD.js";function j({rows:r,columns:a,filename:d,kind:o="csv",className:p,disabled:b}){const i=()=>{const s=o==="tsv"?"	":",",c=t=>{const e=t==null?"":String(t);return e.includes(s)||e.includes(`
+`)||e.includes('"')?`"${e.replace(/"/g,'""')}"`:e},u=a.map(t=>c(t.label)).join(s),x=r.map(t=>a.map(e=>c(e.get(t))).join(s)).join(`
+`),m=new Blob([u+`
+`+x],{type:o==="tsv"?"text/tab-separated-values":"text/csv"}),l=URL.createObjectURL(m),n=document.createElement("a");n.href=l,n.download=`${d}.${o}`,document.body.appendChild(n),n.click(),document.body.removeChild(n),URL.revokeObjectURL(l)};return g.jsxs("button",{onClick:i,disabled:b||r.length===0,className:["px-2.5 py-1 text-xs rounded border border-border","bg-panelmute hover:bg-surface text-text","disabled:opacity-40 disabled:cursor-not-allowed",p||""].join(" "),title:`Export ${r.length} rows as ${o.toUpperCase()}`,children:["Export ",o.toUpperCase()]})}export{j as E};
