@@ -1,0 +1,6 @@
+# Snapshot fixtures + report PDFs are copied verbatim into the built site
+# (dist_snapshot). Never let core.autocrlf touch them: a CRLF rewrite would
+# corrupt every PDF and JSON on the deployed GitHub Pages site.
+* -text
+*.pdf binary
+*.json -text
